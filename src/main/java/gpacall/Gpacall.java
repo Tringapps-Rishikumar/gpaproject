@@ -46,7 +46,7 @@ public class Gpacall {
         return name + " has " + gpa + " gpa ";
     }
 
-    public void gpa_update() {
+    public void gpaUpdate() {
         Scanner bn = new Scanner(System.in);
         lol.info("do you need to update gpa(yes/no)");
         String des = bn.next();

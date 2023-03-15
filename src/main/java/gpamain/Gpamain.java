@@ -19,7 +19,7 @@ public class Gpamain {
         o.gpacalculation(grade);
         lol.log(Level.INFO, () ->o.displayGpa());
 
-        o.gpa_update();
+        o.gpaUpdate();
     }
 }
 
