@@ -1,6 +1,7 @@
 package gpacall;
 
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Gpacall {
@@ -54,7 +55,7 @@ public class Gpacall {
             lol.info("enter the student grade:");
             String grade = bn.next();
             gpa_cal(grade);
-            lol.info(disp_gpa());
+            lol.log(Level.INFO, () ->disp_gpa());
         }
     }
 }
