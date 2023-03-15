@@ -16,8 +16,8 @@ public class Gpamain {
         lol.info("enter the student grade:");
         String grade=bn.next();
         Gpacall o=new Gpacall(name);
-        o.gpa_cal(grade);
-        lol.log(Level.INFO, () ->o.disp_gpa());
+        o.gpacalculation(grade);
+        lol.log(Level.INFO, () ->o.displayGpa());
 
         o.gpa_update();
     }

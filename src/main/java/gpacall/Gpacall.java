@@ -14,7 +14,7 @@ public class Gpacall {
         this.name = name;
     }
 
-    public void gpa_cal(String grade) {
+    public void gpacalculation(String grade) {
 
         switch (grade) {
             case "A"-> {
@@ -42,7 +42,7 @@ public class Gpacall {
 
     }
 
-    public String disp_gpa() {
+    public String displayGpa() {
         return name + " has " + gpa + " gpa ";
     }
 
@@ -54,8 +54,8 @@ public class Gpacall {
             gpa = 0;
             lol.info("enter the student grade:");
             String grade = bn.next();
-            gpa_cal(grade);
-            lol.log(Level.INFO, () ->disp_gpa());
+            gpacalculation(grade);
+            lol.log(Level.INFO, () ->displayGpa());
         }
     }
 }
