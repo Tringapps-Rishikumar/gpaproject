@@ -6,7 +6,8 @@ import java.util.logging.Logger;
 public class Gpacall {
     String name;
     Logger lol = Logger.getLogger("gpa");
-    int dec, gpa = 0;
+    int dec;
+    int gpa = 0;
 
     public Gpacall(String name) {
         this.name = name;
