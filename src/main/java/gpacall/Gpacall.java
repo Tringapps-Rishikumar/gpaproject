@@ -15,7 +15,7 @@ public class Gpacall {
     public void gpa_cal(String grade) {
 
         switch (grade) {
-            case "A" -> {
+            case "A"-> {
                 dec = 4;
                 gpa += dec;
             }

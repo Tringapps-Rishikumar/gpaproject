@@ -4,6 +4,7 @@ package gpamain;
 import gpacall.Gpacall;
 
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Gpamain {
@@ -16,8 +17,8 @@ public class Gpamain {
         String grade=bn.next();
         Gpacall o=new Gpacall(name);
         o.gpa_cal(grade);
+        lol.log(Level.INFO, () ->o.disp_gpa());
 
-        lol.info(o.disp_gpa());
         o.gpa_update();
     }
 }
